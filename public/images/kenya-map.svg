@@ -1,0 +1,16 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#E5F5E0"/>
+  <path d="M400 150C350 200 300 250 350 300C400 350 450 400 400 450C350 500 300 550 350 600C400 650 450 700 400 650C350 600 300 550 350 500C400 450 450 400 400 350C350 300 300 250 350 200C400 150 450 100 400 150Z" fill="#74C69D" stroke="#2D6A4F" stroke-width="2"/>
+  <circle cx="400" cy="400" r="5" fill="#D00" stroke="#000" stroke-width="2"/>
+  <text x="420" y="400" font-family="Arial" font-size="16" fill="#000">Nairobi</text>
+  <circle cx="300" cy="300" r="3" fill="#000"/>
+  <text x="310" y="300" font-family="Arial" font-size="12" fill="#000">Kisumu</text>
+  <circle cx="500" cy="500" r="3" fill="#000"/>
+  <text x="510" y="500" font-family="Arial" font-size="12" fill="#000">Mombasa</text>
+  <circle cx="350" cy="200" r="3" fill="#000"/>
+  <text x="360" y="200" font-family="Arial" font-size="12" fill="#000">Lodwar</text>
+  <circle cx="450" cy="600" r="3" fill="#000"/>
+  <text x="460" y="600" font-family="Arial" font-size="12" fill="#000">Lamu</text>
+  <text x="50" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#2D6A4F">Kenya</text>
+  <text x="50" y="780" font-family="Arial" font-size="12" fill="#666">Click on the map to select a tree planting location</text>
+</svg>
