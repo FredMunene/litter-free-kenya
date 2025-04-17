@@ -6,7 +6,7 @@ import type { NaturePersona } from "@/components/nature-chatbot/types"
 export async function POST(req: NextRequest) {
   try {
     const { messages, persona } = await req.json()
-
+    
     // Get the system prompt based on the selected persona
     const systemPrompt = getPersonaPrompt(persona)
 
