@@ -1,44 +1,43 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
+import type React from "react"
+import type { Metadata } from "next"
+import { Playfair_Display, Montserrat } from "next/font/google"
+import "./globals.css"
+import { ChatWidgetWrapper } from "@/components/nature-chatbot/chat-widget-wrapper"
 
-const inter = Inter({ subsets: ['latin'] })
+// Elegant serif font for headings
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair",
+})
+
+// Clean sans-serif for body text
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+})
 
 export const metadata: Metadata = {
-  title: 'Litter-Free Kenya',
-  description: 'Together, for a Cleaner Kenya',
+  title: "LitterFreeKenya - Environmental Conservation",
+  description: "Protecting our planet through conservation, education, and community action.",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <nav className="bg-green-500 p-4">
-          <div className="container mx-auto flex justify-between items-center">
-            <Link href="/" className="text-white text-2xl font-bold">Litter-Free Kenya</Link>
-            <ul className="flex space-x-4">
-              <li><Link href="/" className="text-white hover:text-green-200">Home</Link></li>
-              <li><Link href="/about" className="text-white hover:text-green-200">About Us</Link></li>
-              <li><Link href="/join-cleanup" className="text-white hover:text-green-200">Join Cleanup</Link></li>
-              <li><Link href="/blog" className="text-white hover:text-green-200">Blog/News</Link></li>
-              <li><Link href="/contact" className="text-white hover:text-green-200">Contact</Link></li>
-              <li><Link href="/partner" className="text-white hover:text-green-200">Partner</Link></li>
-            </ul>
-          </div>
-        </nav>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${playfair.variable} ${montserrat.variable} font-sans`}>
         {children}
-        <footer className="bg-green-500 text-white p-4 mt-8">
-          <div className="container mx-auto text-center">
-            <p>&copy; 2023 Litter-Free Kenya. All rights reserved.</p>
-          </div>
-        </footer>
+        <ChatWidgetWrapper />
       </body>
     </html>
   )
 }
 
+
+import './globals.css'
