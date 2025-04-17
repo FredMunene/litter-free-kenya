@@ -29,7 +29,7 @@
 
 2. Install dependencies:
     ```bash
-    npm install react@18 react-dom@18 react-leaflet@4.2.1 date-fns@2.30.0 react-day-picker@8.10.1 ai
+    npm install react@18 react-dom@18 react-leaflet@4.2.1 date-fns@2.30.0 react-day-picker@8.10.1 ai @ai-sdk/groq
     npm install --save-dev @types/leaflet ai@
     npm install 
     ```
